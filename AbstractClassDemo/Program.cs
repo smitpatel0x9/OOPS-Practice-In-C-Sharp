@@ -28,10 +28,11 @@ public class Program
 {
     public static void Main()
     {
-        AbsChild obj = new();
-        obj.Add(10, 5);
-        obj.Sub(10, 5);
-        obj.Mul(10, 5);
-        obj.Div(10, 5);
+        AbsChild obj = new(); // Child class instance     
+        AbsParent obj2 = obj; // Abstract class reference poiting to child class object
+        obj2.Add(10, 5);
+        obj2.Sub(10, 5);
+        obj2.Mul(10, 5);
+        obj2.Div(10, 5);
     }
 }
