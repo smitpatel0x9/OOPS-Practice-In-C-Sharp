@@ -6,11 +6,12 @@
     }
     public static void Main()
     {
-        PrivateConstructor obj = new PrivateConstructor();
+        PrivateConstructor obj1 = new PrivateConstructor();
+        PrivateConstructor obj2 = new PrivateConstructor();
         Console.WriteLine("Main method");
     }
 }
 public class Test
 {
-    //PrivateConstructor obj2 = new PrivateConstructor(); Not possible as Constructor is private
+    //PrivateConstructor obj3 = new PrivateConstructor(); Not possible as Constructor is private
 }
