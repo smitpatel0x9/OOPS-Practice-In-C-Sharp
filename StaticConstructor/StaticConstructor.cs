@@ -8,8 +8,8 @@ namespace Practice
 {
     public class StaticConstructor
     {
-        int i;
-        static int j;
+        public int i;
+        public static int j;
         static StaticConstructor()
         {
             Console.WriteLine("Static Constructor execution");
@@ -22,14 +22,19 @@ namespace Practice
             i = 10; 
             j = 20; // I can assign static member using non-static constructor
         }
+    }
+    public class Program
+    {
         public static void Main()
         {
             Console.WriteLine("Main method execution");
             //Console.WriteLine(i); Error : Object reference is required for accessing non-static member
-            Console.WriteLine(j);
-            StaticConstructor obj = new StaticConstructor();
-            //Console.WriteLine(i); Error : Object reference is required for accessing non-static member
-            Console.WriteLine(j);
+            Console.WriteLine(StaticConstructor.j); // Prints 10
+            StaticConstructor obj1 = new StaticConstructor(); // j = 20
+            Console.WriteLine(obj1.i);
+            Console.WriteLine(StaticConstructor.j); // Prints 20
+            StaticConstructor obj2 = new StaticConstructor(); // j = 20
+            Console.WriteLine(StaticConstructor.j); // Prints 20
         }
     }
 }
