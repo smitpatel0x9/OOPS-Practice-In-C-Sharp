@@ -8,7 +8,7 @@ namespace InheritanceDemo
 {
     public class A
     {
-        public A(int number) // Parameterized constructor
+        public A(ref int number) // Parameterized constructor
         {
             Console.WriteLine($"Class A constructor is called {number}");
             number += 20; // Incrementing in class A constructor
