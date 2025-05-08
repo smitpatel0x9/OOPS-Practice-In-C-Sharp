@@ -1,5 +1,5 @@
 ﻿using InheritanceDemo;
-
+namespace Inheritance;
 public class B : A // class B inheriting from class A
 {
     public B(int number) : base(number)
