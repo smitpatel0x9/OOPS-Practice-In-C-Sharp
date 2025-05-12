@@ -8,7 +8,7 @@
             c1.Display();
             Complex c2 = new(2, 3);
             c2.Display();
-            Complex obj = Complex.Add(c1, c2);
+            Complex obj = c1 + c2;
             obj.Display();
         }
     }
@@ -21,7 +21,7 @@
             _real = real;
             _imaginary = imaginary;
         }
-        public static Complex Add(Complex c1,Complex c2)
+        public static Complex operator +(Complex c1,Complex c2)
         {
             Complex temp = new();
             temp._real = c1._real + c2._real;
