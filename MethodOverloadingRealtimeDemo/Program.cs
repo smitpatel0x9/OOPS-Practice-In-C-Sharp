@@ -8,7 +8,7 @@
             string methodName = "Main";
             string uniqueId = Guid.NewGuid().ToString();
             Logger.Log(className, methodName, "Message 1");
-            Logger.Log(className, methodName, "Message 2");
+            Logger.Log(uniqueId,className, methodName, "Message 2");
             Logger.Log("Message 3");
             try
             {
