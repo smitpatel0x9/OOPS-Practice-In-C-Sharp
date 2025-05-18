@@ -29,10 +29,10 @@ namespace Practice
         {
             Console.WriteLine("Main method execution");
             //Console.WriteLine(i); Error : Object reference is required for accessing non-static member
-            Console.WriteLine(StaticConstructor.j); // Prints 10
+            Console.WriteLine(StaticConstructor.j); // Prints 10, static constructor executed
             StaticConstructor obj1 = new StaticConstructor(); // j = 20
-            Console.WriteLine(obj1.i);
-            Console.WriteLine(StaticConstructor.j); // Prints 20
+            Console.WriteLine(obj1.i); // Prints 10
+            Console.WriteLine(StaticConstructor.j); // Prints 20 because this time static constructor won't get executed (get's executed only once when the class first comes into play)
             StaticConstructor obj2 = new StaticConstructor(); // j = 20
             Console.WriteLine(StaticConstructor.j); // Prints 20
         }
