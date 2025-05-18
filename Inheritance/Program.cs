@@ -13,7 +13,7 @@ public class B : A // class B inheriting from class A
     public static void Main()
     {
         int temp = 10;
-        B obj = new B(ref temp); // Pass by value
+        B obj = new B(ref temp); // Pass by reference
         obj.Method1(); // Inherited Method1 from class A
         obj.Method2(); // Inherited Method2 from class A
         obj.Method3(); // Method of class B
