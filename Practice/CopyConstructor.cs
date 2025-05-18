@@ -18,9 +18,9 @@ public class Test
     {
         x = i;
     }
-    public Test(Test obj)
+    public Test(Test obj) // Copy Constructor
     {
-        x = obj.x;
+        x = obj.x;  // You are using previous object's x value and assigning it to current object x value
     }
     public void Display()
     {
