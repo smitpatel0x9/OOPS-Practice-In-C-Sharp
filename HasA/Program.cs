@@ -24,7 +24,7 @@ namespace HasA
         public string _name;
         public Employee(Address address, int id, string name)
         {
-            _address = address; // HasA Relationship : Employee HasA an Address
+            _address = address; // HasA Relationship : Employee HasA Address
             _id = id;
             _name = name;
         }
