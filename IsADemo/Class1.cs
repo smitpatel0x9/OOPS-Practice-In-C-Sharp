@@ -28,6 +28,6 @@ namespace IsADemo
             _height = height;
         }
 
-        public double Volume() => _length * _width * _height;
+        public double Volume() => Area() * _height;
     }
 }
