@@ -32,7 +32,12 @@ public class Program
 {
     public static void Main()
     {
-        AbsChild obj = new(); // Child class instance     
+        AbsChild obj = new(); // Child class instance
+        obj.Add(10, 20);
+        obj.Sub(20, 10);
+        obj.Mul(3, 2);
+        obj.Div(8, 2);
+        obj.Something();
         AbsParent obj2 = obj; // Abstract class reference poiting to child class object
         obj2.Add(10, 5); // Abstract class reference can access abstract class non-abstract method
         obj2.Sub(10, 5);
