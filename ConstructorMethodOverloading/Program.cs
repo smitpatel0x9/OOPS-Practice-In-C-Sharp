@@ -12,7 +12,7 @@
             Program obj3 = new(10, 20, 30);
             obj3.Display();
         }
-        public  Program(int x)
+        public Program(int x)
         {
             this.x = x;
         }
