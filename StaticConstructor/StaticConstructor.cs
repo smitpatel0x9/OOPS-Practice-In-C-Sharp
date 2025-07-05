@@ -20,7 +20,7 @@ namespace Practice
         {
             Console.WriteLine("Non static constructor");
             i = 10; 
-            j = 20; // I can assign static member using non-static constructor
+            j = 20; // I can assign static member using non-static constructor but not recommended as it does for every object
         }
     }
     public class Program
