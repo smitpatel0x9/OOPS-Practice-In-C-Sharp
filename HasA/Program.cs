@@ -19,12 +19,12 @@ namespace HasA
     }
     public class Employee
     {
-        public Address _address;
+        public Address _address; // HasA Relationship : Employee HasA Address
         public int _id;
         public string _name;
         public Employee(Address address, int id, string name)
         {
-            _address = address; // HasA Relationship : Employee HasA Address
+            _address = address;
             _id = id;
             _name = name;
         }
