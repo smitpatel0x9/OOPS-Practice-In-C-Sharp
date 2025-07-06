@@ -18,6 +18,8 @@
             ITestInterface2 ref2 = new Class2();
             ref2.Add(6, 15);
             ref2.Sub(7, 3);
+            ITestInterface1 ref3 = new Class2();
+            ref3.Add(8, 3);
         }
     }
     interface ITestInterface1
